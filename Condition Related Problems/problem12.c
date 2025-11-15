@@ -1,0 +1,26 @@
+
+/*12. Program that will construct a menu for performing arithmetic operations. The user will give
+two real numbers (a, b) on which the arithmetic operations will be performed and an integer
+number (1 <= Choice <= 4) as a choice. Choice-1, 2, 3, 4 are for performing addition,
+subtraction, multiplication, division (quotient) respectively.
+Sample input (a, b, Choice) Sample output
+5 10
+3
+Multiplication: 50
+-5 10.5
+4
+Quotient: 0*/
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter two number(1 <= Choice <= 4): ");
+    scanf("%d %d",&a,&b);
+    printf("two number addition is: %d",a+b);
+   printf("two number subtraction is: %d",a-b);
+   printf("two number multiplication is: %d",a*b);
+   printf("two number division is: %d",a/b);
+
+
+
+}

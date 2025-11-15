@@ -1,0 +1,30 @@
+/*10. Program that will evaluate simple expressions of the form-
+<number1> <operator> <number2>
+; where operators are (+, - , *, /)
+And if the operator is “/”, then check if <number2> nonzero or not.
+Sample input Sample output
+100 * 55.5 Multiplication: 5550
+100 / -5.5 Division: -18.181818
+100 / 0 Division: Zero as divisor is not valid!*/
+#include<stdio.h>
+int main()
+{
+    int number1,number2;
+    char A;
+    printf("Enter two number:");
+    scanf("%d%d",&number1,&number2);
+    printf("Enter operator(+ - * \\): ");
+    fflush(stdin);
+    scanf("%c",&A);
+    if(A=='+'){
+        printf("Sum=%d",number1+number2);
+    }else if(A=='-'){
+        printf("Sub=%d",number1-number2);
+    }else if(A=='*'){
+        printf("Multiplication=%d",number1*number2);
+    }
+    else if(A=='/'){
+        printf("Division=%d",number1/number2);
+    }
+    getchar();
+}
