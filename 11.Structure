@@ -33,3 +33,4 @@ int main()
     printf("%d\n",Adil.id);
     printf("%.4f",Adil.salary);
 }
+
