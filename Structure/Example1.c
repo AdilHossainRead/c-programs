@@ -1,0 +1,35 @@
+/*#include<stdio.h>
+struct person
+{
+    int age;
+    int id;
+    float salary;
+};
+int main()
+{
+    struct person Adil,Akash,Shamim;
+    Adil.age=19;
+    Adil.id=112330414;
+    Adil.salary=0.00;
+    printf("%d\n",Adil.age);
+    printf("%d\n",Adil.id);
+    printf("%.4f",Adil.salary);
+}
+*/
+#include<stdio.h>
+struct person
+{
+    int age;
+    int id;
+    float salary;
+};
+int main()
+{
+    struct person Adil,Akash,Shamim;
+    Adil.age=20;
+    Adil.id=1414;
+    Adil.salary=0.00;
+    printf("%d\n",Adil.age);
+    printf("%d\n",Adil.id);
+    printf("%.4f",Adil.salary);
+}
