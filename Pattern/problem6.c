@@ -1,0 +1,24 @@
+/*
+
+Enter n=5
+*****
+ ****
+  ***
+   **
+    *
+*/
+#include<stdio.h>
+int main()
+{
+    int n,row,col;
+    printf("Enter n=");
+    scanf("%d",&n);
+    for(row=n;row>0;row--){
+        for(col=1;col<=n-row;col++){
+            printf(" ");
+        }for(col=1;col<=row;col++){
+        printf("*");
+        }printf("\n");
+
+    }
+}

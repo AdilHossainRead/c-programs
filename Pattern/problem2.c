@@ -1,0 +1,18 @@
+/* *****
+   ****
+   ***
+   **
+   *
+   */
+#include<stdio.h>
+int main()
+{
+    int n,row,col;
+    printf("Enter n=");
+    scanf("%d",&n);
+    for(row=5;row>0;row--){
+        for(col=1;col<=row;col++){
+            printf("*");
+        }printf("\n");
+    }
+}
