@@ -1,0 +1,21 @@
+#include<stdio.h>
+int print_factorial(int X)
+{
+    if(X==0 || X==1)
+    {
+        return 1;
+    }
+    else
+    {
+       printf("x=%d ",X);
+       return X*print_factorial(X-1);
+    }
+}
+int main()
+{
+    int N,M;
+    printf("Enter number N=");
+    scanf("%d",&N);
+
+    printf("factorial number is : %d",print_factorial(N));
+}
