@@ -1,0 +1,24 @@
+#include<stdio.h>
+int sum=0;
+void print_sum(int X, int Y)
+{
+    if(X>Y)
+    {
+        return;
+    }
+    else
+    {
+        sum+=X;
+        printf("sum is: %d \n",sum);
+        print_sum(X+1,Y);
+    }
+}
+int main()
+{
+    int N,M;
+    printf("Enter minimum number N=");
+    scanf("%d",&N);
+    printf("Enter minimum number M=");
+    scanf("%d",&M);
+    print_sum(N,M);
+}
