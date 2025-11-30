@@ -1,0 +1,22 @@
+#include<stdio.h>
+void print_function(int X, int Y)
+{
+    if(X>Y)
+    {
+        return;
+    }
+    else
+    {
+        printf(" %d",X);
+        print_function(X+1,Y);
+    }
+}
+int main()
+{
+    int N,M;
+    printf("Enter minimum number N=");
+    scanf("%d",&N);
+    printf("Enter minimum number M=");
+    scanf("%d",&M);
+    print_function(N,M);
+}
