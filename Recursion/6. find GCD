@@ -1,0 +1,21 @@
+#include<stdio.h>
+int print_GCD(int X, int Y)
+{
+    if(Y==0)
+    {
+        return X;
+    }
+    else
+    {
+       return print_GCD(Y,X%Y);
+    }
+}
+int main()
+{
+    int N,M;
+    printf("Enter fast number N=");
+    scanf("%d",&N);
+    printf("Enter second number M=");
+    scanf("%d",&M);
+    printf("GCD id %d",print_GCD(N,M));
+}
