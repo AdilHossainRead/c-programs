@@ -1,7 +1,7 @@
 /*10. Program that will evaluate simple expressions of the form-
 <number1> <operator> <number2>
 ; where operators are (+, - , *, /)
-And if the operator is ì/î, then check if <number2> nonzero or not.
+And if the operator is ‚Äú/‚Äù, then check if <number2> nonzero or not.
 Sample input Sample output
 100 * 55.5 Multiplication: 5550
 100 / -5.5 Division: -18.181818
