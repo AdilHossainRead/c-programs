@@ -1,0 +1,28 @@
+
+#include<stdio.h>
+int Fibonacci_sequence(int n)
+{
+    if(n==0)
+    {
+        return 0;
+    }
+    else if(n==1)
+    {
+        return 1;
+    }
+      return Fibonacci_sequence(n-1)+Fibonacci_sequence(n-2);
+}
+int main()
+{
+    int n;
+    printf("Enter the number n=");
+    scanf("%d",&n);
+    printf("Fibonacci Sequence:\n");
+
+    for (int i = 0; i < n; i++) {
+        printf("%d ", Fibonacci_sequence(i));
+    }
+
+
+}
+
