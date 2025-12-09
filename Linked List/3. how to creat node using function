@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct Listnode
+{
+    int data;
+    Listnode* next;
+};
+Listnode* head=NULL;
+Listnode* tail=NULL;
+
+Listnode* creat_node(int value)
+{
+    Listnode* temp=(Listnode*)malloc(sizeof(Listnode));
+    temp->data=value;
+    temp->next=null;
+}
+
+void insert_value(int n)
+{
+    if(head==NULL)
+    {
+        head=creat_node(n);
+        tail=head;
+    }
+    else
+    {
+        Listnode* temp=creat_node(n);
+        tail->next=temp;
+        tail=tail->next;
+
+    }
+}
+int main()
+{
+    insert_value(10);
+    insert_value(20);
+    insert_value(130);
+    insert_value(102);
+    insert_value(106);
+    insert_value(120);
+    insert_value(108);
+    insert_value(210);
+    insert_value(170);
+    insert_value(110);
+}
