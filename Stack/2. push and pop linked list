@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct stack_node
+{
+    int data;
+    struct stack_node* next;
+};
+struct stack_node* top=NULL;
+void insert_value(int data)
+{
+    stack_node* newNode=(*stack_node)malloc(sizeof(stack_node));
+    newNode->data=data;
+    newNode->next=top;
+    top=newNode;
+    printf("%d pushed into stack\m", data);
+}
+void pop(int value)
+{
+    if(top==NULL)
+    {
+        printf("stack underflow");
+        return;
+    }
+    stack_node* temp=top;
+    printf("%d popped from stack\n"top->value);
+    top=temp->next;
+    free(temp);
+}
+int main()
+{
+    insert_value(10);
+    insert_value(12);
+    insert_value(21);
+    insert_value(23);
+    insert_value(32);
+    insert_value(45);
+    insert_value(54);
+}
